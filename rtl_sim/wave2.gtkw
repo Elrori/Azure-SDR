@@ -1,0 +1,54 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Sat Mar 28 06:16:34 2020
+[*]
+[dumpfile] "C:\EXTDOC\WORK_SPACE-2ND\mix\AzureSDR\rtl\wave2.vcd"
+[dumpfile_mtime] "Sat Mar 28 06:15:50 2020"
+[dumpfile_size] 157067
+[savefile] "C:\EXTDOC\WORK_SPACE-2ND\mix\AzureSDR\rtl\wave2.gtkw"
+[timestart] 9655400
+[size] 2560 1361
+[pos] -1 -1
+*-15.000000 9935000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] fir_dec_tb.
+[sst_width] 239
+[signals_width] 170
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@28
+fir_dec_tb.u_fir_dec.clk
+fir_dec_tb.u_fir_dec.rst_n
+@24
+fir_dec_tb.u_fir_dec.dec_cnt[1:0]
+@28
+fir_dec_tb.u_fir_dec.din_val
+fir_dec_tb.u_fir_dec.fir_start
+@420
+fir_dec_tb.u_fir_dec.dout[31:0]
+@28
+fir_dec_tb.u_fir_dec.dout_val
+@420
+fir_dec_tb.u_fir_dec.din[15:0]
+@24
+fir_dec_tb.u_fir_dec.wraddress[4:0]
+[color] 3
+fir_dec_tb.u_fir_dec.rdaddress[4:0]
+[color] 3
+fir_dec_tb.u_fir_dec.addr_a[4:0]
+@420
+[color] 2
+fir_dec_tb.u_fir_dec.q[15:0]
+[color] 2
+fir_dec_tb.u_fir_dec.q_a[15:0]
+[color] 7
+fir_dec_tb.u_fir_dec.multb[15:0]
+[color] 7
+fir_dec_tb.u_fir_dec.multa[15:0]
+[color] 5
+fir_dec_tb.u_fir_dec.result[31:0]
+fir_dec_tb.u_fir_dec.result_b[36:0]
+fir_dec_tb.u_fir_dec.sum[36:0]
+@24
+fir_dec_tb.u_fir_dec.st[2:0]
+[pattern_trace] 1
+[pattern_trace] 0

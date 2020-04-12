@@ -1,0 +1,57 @@
+[*]
+[*] GTKWave Analyzer v3.3.71 (w)1999-2016 BSI
+[*] Sat Mar 21 04:18:30 2020
+[*]
+[dumpfile] "C:\EXTDOC\WORK_SPACE-2ND\mix\MYSDR\fx2\wave.vcd"
+[dumpfile_mtime] "Sat Mar 21 04:17:09 2020"
+[dumpfile_size] 244466
+[savefile] "C:\EXTDOC\WORK_SPACE-2ND\mix\MYSDR\fx2\wave.gtkw"
+[timestart] 2491000
+[size] 2560 1361
+[pos] -1 -1
+*-19.465452 6290000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] fx2_tb.
+[sst_width] 239
+[signals_width] 180
+[sst_expanded] 1
+[sst_vpaned_height] 414
+@28
+fx2_tb.usb.rst_n
+fx2_tb.usb.clk
+fx2_tb.usb.clk_180
+fx2_tb.usb.cy_addr[1:0]
+@24
+fx2_tb.usb.cy_data[15:0]
+fx2_tb.usb.cy_data_o[15:0]
+@28
+fx2_tb.usb.cy_flaga
+fx2_tb.usb.cy_flagb
+fx2_tb.usb.cy_ifclk
+fx2_tb.usb.cy_ifclk_ok
+fx2_tb.usb.cy_pkend_n
+fx2_tb.usb.cy_sloe_n
+fx2_tb.usb.cy_slrd_n
+fx2_tb.usb.cy_slwr_n
+@22
+fx2_tb.usb.dly[31:0]
+@24
+fx2_tb.usb.nst[3:0]
+fx2_tb.usb.cst[3:0]
+@28
+fx2_tb.usb.read_en
+@24
+fx2_tb.usb.send_cnt[8:0]
+@29
+fx2_tb.usb.up_req_b
+@28
+fx2_tb.usb.up_req
+fx2_tb.usb.up_grant
+@24
+fx2_tb.usb.up_dat[15:0]
+@28
+fx2_tb.usb.up_fin
+fx2_tb.usb.dn_val
+@22
+fx2_tb.usb.dn_dat[15:0]
+[pattern_trace] 1
+[pattern_trace] 0

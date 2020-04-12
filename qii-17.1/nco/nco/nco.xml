@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2020.03.23.14:03:33"
+ outputDirectory="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Cyclone IV E"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="EP4CE10F17C8"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="8"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="0" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="in" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="clken" direction="input" role="clken" width="1" />
+   <port name="phi_inc_i" direction="input" role="phi_inc_i" width="32" />
+  </interface>
+  <interface name="out" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="rst" />
+   <port name="fsin_o" direction="output" role="fsin_o" width="12" />
+   <port name="fcos_o" direction="output" role="fcos_o" width="12" />
+   <port name="out_valid" direction="output" role="out_valid" width="1" />
+  </interface>
+  <interface name="rst" kind="reset" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="synchronousEdges" value="DEASSERT" />
+   <port name="reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="nco:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=EP4CE10F17C8,AUTO_DEVICE_FAMILY=Cyclone IV E,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1584943412,AUTO_UNIQUE_ID=(altera_nco_ii:17.1:apr=32,aprf=32,apri=12,aprp=16,arch=large_rom,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=4,fmod_pipe=1,freq_out=1.0,fsamp=40.0,hyper_opt=false,hyper_opt_select=false,mpr=12,numba=1,numch=1,phi_inc=107374182,pmod_pipe=1,real_freq_out=1.0,selected_device_family=Cyclone IV E,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=false,want_phase_mod=false,want_sin_and_cos=dual_output)"
+   instancePathKey="nco"
+   kind="nco"
+   version="1.0"
+   name="nco">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1584943412" />
+  <parameter name="AUTO_DEVICE" value="EP4CE10F17C8" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone IV E" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
+  <generatedFiles>
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/nco.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_nco_mob_rw.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_nco_isdr.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_nco_apr_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_dxx_g.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_gal.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_altqmcpipe.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/nco_nco_ii_0_sin.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/nco_nco_ii_0_cos.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/nco_nco_ii_0.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_altq.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_altqmcash.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_altqmcpipe.ocp"
+       type="OTHER"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="C:/intelfpga/17.1/ip/altera/dsp/altera_nco_ii/altera_nco_ii_hw.tcl" />
+   <file path="C:/intelFPGA/17.1/ip/altera/dsp/altera_nco_ii/nco_helper.jar" />
+   <file
+       path="C:/intelFPGA/17.1/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="nco">queue size: 0 starting:nco "nco"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>1</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="nco"><![CDATA["<b>nco</b>" reuses <b>altera_nco_ii</b> "<b>submodules/nco_nco_ii_0</b>"]]></message>
+   <message level="Debug" culprit="nco">queue size: 0 starting:altera_nco_ii "submodules/nco_nco_ii_0"</message>
+   <message level="Info" culprit="nco_ii_0"><![CDATA["<b>nco</b>" instantiated <b>altera_nco_ii</b> "<b>nco_ii_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_nco_ii:17.1:apr=32,aprf=32,apri=12,aprp=16,arch=large_rom,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=4,fmod_pipe=1,freq_out=1.0,fsamp=40.0,hyper_opt=false,hyper_opt_select=false,mpr=12,numba=1,numch=1,phi_inc=107374182,pmod_pipe=1,real_freq_out=1.0,selected_device_family=Cyclone IV E,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=true,want_freq_mod=false,want_phase_mod=false,want_sin_and_cos=dual_output"
+   instancePathKey="nco:.:nco_ii_0"
+   kind="altera_nco_ii"
+   version="17.1"
+   name="nco_nco_ii_0">
+  <parameter name="aprp" value="16" />
+  <parameter name="numba" value="1" />
+  <parameter name="cordic_arch" value="parallel" />
+  <parameter name="pmod_pipe" value="1" />
+  <parameter name="fsamp" value="40.0" />
+  <parameter name="cycles_per_output" value="1" />
+  <parameter name="selected_device_family" value="Cyclone IV E" />
+  <parameter name="apri" value="12" />
+  <parameter name="aprf" value="32" />
+  <parameter name="want_dither" value="true" />
+  <parameter name="hyper_opt_select" value="false" />
+  <parameter name="want_phase_mod" value="false" />
+  <parameter name="apr" value="32" />
+  <parameter name="hyper_opt" value="false" />
+  <parameter name="trig_cycles_per_output" value="1" />
+  <parameter name="dpri" value="4" />
+  <parameter name="mpr" value="12" />
+  <parameter name="design_env" value="NATIVE" />
+  <parameter name="numch" value="1" />
+  <parameter name="want_freq_mod" value="false" />
+  <parameter name="use_dedicated_multipliers" value="true" />
+  <parameter name="want_sin_and_cos" value="dual_output" />
+  <parameter name="phi_inc" value="107374182" />
+  <parameter name="fmod_pipe" value="1" />
+  <parameter name="arch" value="large_rom" />
+  <parameter name="freq_out" value="1.0" />
+  <parameter name="real_freq_out" value="1.0" />
+  <generatedFiles>
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_nco_mob_rw.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_nco_isdr.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_nco_apr_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_dxx_g.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_dxx.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_gal.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_nco_as_m_cen.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_altqmcpipe.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/nco_nco_ii_0_sin.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/nco_nco_ii_0_cos.hex"
+       type="HEX"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/nco_nco_ii_0.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_altq.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_altqmcash.ocp"
+       type="OTHER"
+       attributes="" />
+   <file
+       path="C:/EXTDOC/WORK_SPACE-2ND/mix/MYSDR/qii-my/nco/nco/synthesis/submodules/asj_altqmcpipe.ocp"
+       type="OTHER"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="C:/intelfpga/17.1/ip/altera/dsp/altera_nco_ii/altera_nco_ii_hw.tcl" />
+   <file path="C:/intelFPGA/17.1/ip/altera/dsp/altera_nco_ii/nco_helper.jar" />
+   <file
+       path="C:/intelFPGA/17.1/quartus/sopc_builder/model/lib/com.altera.entityinterfaces.jar" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="nco" as="nco_ii_0" />
+  <messages>
+   <message level="Debug" culprit="nco">queue size: 0 starting:altera_nco_ii "submodules/nco_nco_ii_0"</message>
+   <message level="Info" culprit="nco_ii_0"><![CDATA["<b>nco</b>" instantiated <b>altera_nco_ii</b> "<b>nco_ii_0</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

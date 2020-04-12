@@ -1,0 +1,9 @@
+"FW.obj",
+"DSCR.obj",
+"slave.obj",
+".\EZUSB.LIB",
+".\USBJmpTb.OBJ" 
+TO "slave" 
+RAMSIZE(256) 
+CODE( 0x0300 )
+XDATA( 0x1A00 )
