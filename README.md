@@ -28,7 +28,7 @@ iverilog仿真
 
 1 需要40M 12bits ADC模块,Altera FPGA板子,cy7c68013a模块，以及与FPGA正确的连接
 
-2 需要修改qii-17.1中引脚约束
+2 需要修改qii-17.1中引脚约束,重新编译下载FPGA
 
 3 通过cypress control center 下载.iic固件到cy7c68013a,并安装cy7c68013a PC驱动
 
