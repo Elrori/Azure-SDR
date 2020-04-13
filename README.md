@@ -4,15 +4,25 @@ Azure-SDR 是通过模块拼接的,目前没有整合的PCB.
 
 **目录结构：**
 
-ExtIO      vs2019工程，用于编译产生ExtIO.dll(已经事先编译),放置到HDSDR目录 确保该目录只有一个dll,打开HDSDR
+```ExtIO```      
 
-cy7c68013a USB2.0芯片固件、固件源码、固件下载方法、驱动
+vs2019工程，用于编译产生ExtIO.dll(已经事先编译),放置到HDSDR目录 确保该目录只有一个dll,打开HDSDR
 
-pcb        AD9235-40模块PCB,拼版
+```cy7c68013a```
 
-qii-17.1   Quartus 17.1 FPGA工程
+USB2.0芯片固件、固件源码、固件下载方法、驱动
 
-rtl_sim    iverilog仿真
+```pcb```   
+
+AD9235-40模块PCB,拼版
+
+```qii-17.1```
+
+Quartus 17.1 FPGA工程
+
+```rtl_sim```
+
+iverilog仿真
 
 **如何复现设计：**
 
