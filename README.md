@@ -1,5 +1,8 @@
+
 Azure-SDR 是使用Altera FPGA,CY7C68013A USB2.0和一块高速ADC的短波SDR接收方案.
+
 Azure-SDR 不能单独工作，需要配合HDSDR软件.
+
 Azure-SDR 是通过模块拼接的,目前没有整合的PCB.
 
 **目录结构：**
