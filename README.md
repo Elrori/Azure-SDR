@@ -39,6 +39,8 @@ iverilog仿真
 
 5 打开HDSDR会自动运行
 
+测试：https://www.bilibili.com/video/BV1x741127pv/
+
 ![Image](https://github.com/Elrori/Azure-SDR/blob/master/IMG_5121.JPG)
 
 **感谢：**
