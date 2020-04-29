@@ -1,5 +1,5 @@
 
-Azure-SDR 是使用Altera FPGA,CY7C68013A USB2.0和一块高速ADC的短波SDR接收方案.
+Azure-SDR 是使用Altera FPGA,CY7C68013A USB2.0和一块高速ADC的短波直采样SDR接收方案.
 
 Azure-SDR 不能单独工作，需要配合HDSDR软件.
 
@@ -17,7 +17,7 @@ USB2.0芯片固件、固件源码、固件下载方法、驱动
 
 ```pcb```   
 
-AD9235-40模块PCB,拼版
+AD9235-40模块PCB,拼版。ADC工作在40MSPS
 
 ```qii-17.1```
 
