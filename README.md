@@ -1,9 +1,11 @@
 
 Azure-SDR 是使用Altera FPGA,CY7C68013A USB2.0和一块高速ADC的短波直采样SDR接收方案.
 
-Azure-SDR 不能单独工作，需要配合HDSDR软件.
+Azure-SDR 不能单独工作,需要配合HDSDR软件.
 
 Azure-SDR 是通过模块拼接的,目前没有整合的PCB.
+
+Azure-SDR 除了DDS使用了Altera IP NCO外其他算法使用纯verilog HDL描述,可综合代码在目录:\qii-17.1\rtl
 
 **目录结构：**
 
