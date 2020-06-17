@@ -7,7 +7,7 @@ Azure-SDR 是通过模块拼接的,目前没有整合的PCB.
 
 Azure-SDR 除了DDS使用了Altera IP NCO外其他算法使用纯verilog HDL描述,可综合代码在目录:\qii-17.1\rtl
 
-信号处理流程：
+**信号处理流程:**
 
 40Msps直接复混频 -> 
 
