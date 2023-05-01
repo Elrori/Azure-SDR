@@ -1,3 +1,0 @@
-用matlab 运行cic_ii_0_example_design_comp_coeff.m按照提示输入参数。
-参数中cut freq=40/20/4=0.5MHz（经验公式，40是adc频率，20是CIC分频倍数，4是常数），我使用了0.55MHz，阶数31，16位符号数，adc频率40MHz。
-产生的cic_ii_0_example_design_fir_comp_coeff.txt权重文件中的16位符号数 请用win10计算器转换为16进制，写入fir_comp_coe.txt
